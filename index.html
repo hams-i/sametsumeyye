@@ -33,6 +33,9 @@
         };
         
         const words = ["'03.10''", "'İyi ki varsın'", "'I LOVE YOU'"];
+        
+        const targetDate = new Date('2025-08-09T14:00:00+00:00').getTime(); // FOR REAL main time
+        // const targetDate = new Date().getTime() + 15000; // FOR TEST
 
         // İçeriği güncelleyen fonksiyon
         function updateContent() {
@@ -228,8 +231,6 @@
             }
         });
 
-        const targetDate = new Date('2025-08-09T14:00:00+03:00').getTime(); // FOR REAL main time
-        // const targetDate = new Date().getTime() + 15000; // FOR TEST
         let currentTargetDate = targetDate; // Mevcut hedef tarih takibi için değişken ekle
 
         function createFirework(x, y) {
