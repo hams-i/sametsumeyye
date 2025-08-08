@@ -21,30 +21,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    
+
     <script>
-        
+
         const SITE_CONFIG = {
             girlName: "SUMEYYE",
-            boyName: "SAMET", 
+            boyName: "SAMET",
             heartSymbol: "❤️",
             songName: "BORA - İyi ki Sen",
-            loveMessage: `I LOVE YOU ✨`
+            loveMessage: `Sümeyyem, bir tanem, canımın içi…
+
+Bugün senin doğum günün ve ben bu mesajı yazarken yüzümde istemsiz bir gülümseme var, çünkü aklımda sadece sen varsın. Düşünüyorum da… Sen olmasaydın, ben şu an olduğum kişi olmazdım. Senin varlığın, hayatımı güzelleştiren en büyük şeylerden biri. Sadece sevgilim değil, aynı zamanda en yakın arkadaşım, en büyük desteğim oldun hep.<br><br>
+Senin o minnoş gülüşün, tatlı bakışların, bir anda sinirlenip hemen ardından sarılman… Hepsiyle, her halinle o kadar kıymetlisin ki sana nasıl teşekkür edeceğimi bile bilmiyorum. Sana her baktığımda içimden “iyi ki” demek geçiyor. Gerçekten, iyi ki varsın. İyi ki doğdun. İyi ki seni tanımışım.<br><br>
+Seninle geçirdiğim her an benim için çok değerli. Kahkahalarımız, saçma sapan tartışmalarımız, o ufacık triplerin bile… Hepsi seninle güzel. Çünkü senin yanındayken, her şey bir şekilde yerine oturuyor. Sakinleşiyorum. Kendimi tamamlanmış hissediyorum.<br><br>
+Bu yeni yaşın sana dilediğin her şeyi getirsin. Ama en çok da sağlık, huzur ve hep birlikte olabileceğimiz upuzun yıllar… Beraber yaşlanalım diyeceğim ama daha çok gençliğimizin tadını çıkaracağız önce. :)<br><br>
+Seni çok ama çok seviyorum Sümeyyem Kalbim seninle dolu. Doğum günün kutlu olsun benim en güzel parçam. 💞<br><br>
+Her zaman seninim.`
         };
-        
+
         const words = ["'08.09''", "'İyi ki varsın'", "'I Love You'"];
-        
-        const targetDate = new Date(new Date('2025-08-09T00:00:00').toLocaleString("en-US", {timeZone: "Europe/Istanbul"})).getTime();
+
+        const targetDate = new Date(new Date('2025-08-09T00:00:00').toLocaleString("en-US", { timeZone: "Europe/Istanbul" })).getTime();
         // const targetDate = new Date().getTime() + 15000; // FOR TEST
 
         // İçeriği güncelleyen fonksiyon
         function updateContent() {
             // Ana sayfa başlığını güncelle
             document.getElementById('title').textContent = `${SITE_CONFIG.girlName} ♥ ${SITE_CONFIG.boyName}`;
-            
+
             // Şarkı adını güncelle
             document.getElementById('music-title').textContent = SITE_CONFIG.songName;
-            
+
             // Aşk mesajını güncelle
             document.querySelector('.for-us').innerHTML = SITE_CONFIG.loveMessage;
         }
@@ -52,7 +59,7 @@
         // Sayfa yüklendiğinde içeriği güncelle
         document.addEventListener('DOMContentLoaded', updateContent);
     </script>
-    
+
     <style>
         .replay-button {
             position: absolute;
